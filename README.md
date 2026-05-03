@@ -13,7 +13,7 @@ This is a minimal Hugo starter for my research group website with pages for:
 
 This repository contains both source code and website content.
 
-- Source code is licensed under the MIT License (see LICENSE file)
+- Source code is licensed under the MIT License (see LICENSE file) as the [template](https://github.com/ymatterlab/hugo-academic-lab-template) 
 - Website content (text, images, figures) is licensed under:
   Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0),
   unless otherwise stated
