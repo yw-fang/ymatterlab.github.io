@@ -1,42 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research | Y-Matter Lab</title>
-  
-  <link rel="stylesheet" href="/css/style.min.26676b431d0c417ece401d90ae3e27db85902b0f20c0064c2083e1019389284a.css">
-</head>
-<body>
-  <header class="site-header">
-  <div class="container header-inner">
-    <a class="site-brand" href="/" aria-label="Y-Matter Lab home">
-      <img src="/images/logo/YMatterLab-log-v5.svg" alt="Y-Matter Lab">
-    </a>
-    <nav>
-      <ul class="nav-list">
-        
-          <li><a href="/">Home</a></li>
-        
-          <li><a href="/news/">News</a></li>
-        
-          <li><a href="/research/">Research</a></li>
-        
-          <li><a href="/people/">People</a></li>
-        
-          <li><a href="/publications/">Publications</a></li>
-        
-          <li><a href="/contact/">Contact</a></li>
-        
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <main class="container">
-    
+{{ define "main" }}
 <article class="page-header">
-  <h1>Research</h1>
+  <h1>{{ .Title }}</h1>
 </article>
 
 <section class="research-page">
@@ -160,24 +124,7 @@
         Students can build skills in quantum-mechanical materials modeling, scientific programming, data analysis, machine learning, and physical interpretation. Projects are often collaborative, with room to move from careful mechanism-building to exploratory materials discovery.
       </p>
     </div>
-    <a class="button" href="/contact/">Contact the Lab</a>
+    <a class="button" href="{{ "/contact/" | relURL }}">Contact the Lab</a>
   </section>
 </section>
-
-  </main>
-  <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <strong>Y-Matter Lab</strong><br>
-      Centro de Física de Materiales (CFM-MPC) | Spanish National Research Council<br>
-      Paseo de Manuel Lardizabal, 5, 20018 Donostia-San Sebastian, Gipuzkoa, Spain
-    </div>
-    <div>
-      <a href="mailto:yuewen.fang@csic.es">yuewen.fang@csic.es</a><br>
-      <a href="/disclaimer/">Disclaimer</a>
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
+{{ end }}
