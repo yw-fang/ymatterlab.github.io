@@ -75,7 +75,7 @@
           </p>
           {{ end }}
 
-          {{ if or .website .scholar .orcid }}
+          {{ if or .website .scholar .orcid .researchgate }}
           <div class="person-profile-links" aria-label="Profile links">
             {{ with .website }}
             <a class="person-icon-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="Personal website">
@@ -105,6 +105,15 @@
                 <path d="M9 8.5v7"></path>
                 <path d="M11.4 15.5h1.7c2 0 3.4-1.4 3.4-3.5s-1.4-3.5-3.4-3.5h-1.7v7Z"></path>
                 <circle cx="9" cy="6.2" r="0.4"></circle>
+              </svg>
+            </a>
+            {{ end }}
+
+            {{ with .researchgate }}
+            <a class="person-icon-link researchgate-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="ResearchGate">
+              <svg class="profile-icon researchgate-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <text class="researchgate-r" x="4.2" y="16.8">R</text>
+                <text class="researchgate-g" x="13.1" y="10.2">G</text>
               </svg>
             </a>
             {{ end }}

@@ -904,6 +904,10 @@ a {
   color: #a6ce39;
 }
 
+.researchgate-link {
+  color: #00a98f;
+}
+
 .profile-icon {
   width: 1.2rem;
   height: 1.2rem;
@@ -920,6 +924,24 @@ a {
   fill: currentColor;
   stroke: #ffffff;
   stroke-width: 1.6;
+}
+
+.researchgate-icon {
+  fill: currentColor;
+  stroke: none;
+}
+
+.researchgate-icon text {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.researchgate-r {
+  font-size: 13px;
+}
+
+.researchgate-g {
+  font-size: 13px;
 }
 
 .person-card-header {
